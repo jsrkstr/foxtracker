@@ -17,7 +17,7 @@ App.collections.Tasks = Backbone.Collection.extend({
 		var modified_timestamp = model.get("modified_at");
 		if(model.isStarred())
 			modified_timestamp += 1000000000000;
-		return modified_timestamp;
+		return -modified_timestamp;
 	}
 
 });
