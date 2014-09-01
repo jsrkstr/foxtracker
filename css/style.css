@@ -1,0 +1,282 @@
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font:inherit;font-size:14px;color: #4a4a4a;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+
+/* Layout Styles Start */
+
+a {
+	text-decoration : none;
+}
+
+a:hover, a.active {
+	color : #00d7ff;
+}
+
+p {
+	margin-bottom : 10px;
+}
+
+select {
+	background-color: #F5F5F5;
+	line-height: 28px;
+	padding: 15px 5px;
+	background: #fff;
+	border: 1px #ccc solid;
+	border-radius: 4px;
+	height: 50px;
+	font-size: 14px;
+}
+
+.fl {
+	float : left !important;
+}
+
+.fr {
+	float : right !important;
+}
+
+
+
+.clear {
+	clear : both;
+}
+
+
+.white-text {
+	color: white;
+}
+
+.small, .small * {
+	font-size : 12px;
+}
+
+
+
+
+.large, .large * {
+	font-size : 20px;
+}
+
+.b {
+	font-weight : 600;
+}
+
+*:focus{outline:none !important}
+
+
+
+input[type=text] {
+	padding: 3px 8px;
+	border-radius: 3px;
+	border: 1px solid #d4d4d4;
+	height: 20px;
+	font-size: 14px;
+	width: 200px;
+	margin-bottom: 10px;
+}
+
+input[type=text]:focus {
+	border-color: #00d7ff;
+	box-shadow: 0px 0px 2px #00d7ff;
+}
+
+textarea {
+	padding: 3px 8px;
+	border-radius: 3px;
+	border: 1px solid #d4d4d4;
+	height: 50px;
+	font-size: 14px;
+	width: 200px;
+}
+
+
+/* Layout Styles End */
+
+
+body{
+	background-color:#fff;
+	font-family:'Open Sans', Arial, sans-serif; 
+}
+
+#header {
+	height: 20px;
+	padding : 10px;
+	color : white;
+	box-shadow: 0 1px 2px rgba(0,0,0,.1),0 1px 0 rgba(0,0,0,.1);
+	background: linear-gradient(to bottom,#27709b 0,#24688f 100%);
+}
+
+.logo {
+	position: absolute;
+	left : 50%;
+	margin-left : -50px;
+	color : white;
+}
+
+#surface {
+	min-height: 400px;
+}
+
+.container {
+	width : 960px;
+	margin : auto;
+}
+
+.projects-area {
+	padding: 50px;
+}
+
+.project-item {
+	float: left;
+}
+
+.project-item span {
+	color : white;
+}
+
+.project-item .open {
+	width: 300px;
+	min-height: 100px;
+	padding: 10px;
+	display: block;
+	position: relative;
+	border-radius: 5px;
+	background-color: #23719F;
+	margin : 0px 20px 20px 0px;
+}
+
+.tasks-area {
+	padding: 50px;
+}
+
+.blue-bg {
+	background-color: rgb(59, 159, 218);
+}
+
+.list {
+	background: #e3e3e3;
+	border-radius: 5px;
+	width: 300px;
+	padding: 10px;
+	margin-right: 60px;
+	float: left;
+	margin-bottom: 20px;
+}
+
+.list-header {
+	margin-bottom: 10px;
+}
+
+.list-header span {
+	font-weight: bold;
+}
+
+.task-item {
+	background-color: #fff;
+	border-bottom: 1px solid #ccc;
+	border-radius: 3px;
+	cursor: pointer;
+	margin-bottom: 5px;
+	padding: 10px;
+	min-height: 20px;
+	position: relative;
+	z-index: 0;
+}
+
+.list-footer {
+	margin-top: 20px;
+}
+
+.icon-home {
+	background: url("../images/home.png") no-repeat;
+	display: block;
+	width: 24px;
+	height: 24px;
+	float: left;
+	margin-left: 38px;
+}
+
+
+.icon-del {
+	background: url("../images/delete.png") no-repeat;
+	display: block;
+	width: 16px;
+	height: 16px;
+}
+
+.icon-edit {
+	background: url("../images/edit.png") center no-repeat;
+	display: block;
+	width: 16px;
+	height: 16px;
+}
+
+.icon-play {
+	background: url("../images/play.png") no-repeat;
+	display: none;
+	width: 20px;
+	height: 20px;
+}
+
+.icon-stop {
+	background: url("../images/stop.png") no-repeat;
+	display: block;
+	width: 20px;
+	height: 20px;
+}
+
+.toggle-timer {
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+}
+
+.hover .icon-play {
+	display: block;
+}
+
+.project-edit {
+	position: absolute;
+	right : 36px;
+	top: 10px;
+}
+
+.project-delete {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+
+.task-edit {
+	display: none;
+	position: absolute;
+	right: 35px;
+	top: 10px;	
+}
+
+
+.task-delete {
+	display: none;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+
+.hover .task-delete {
+	display: block;
+}
+
+.hover .task-edit {
+	display: block;
+}
+
+/* Smartphones ----------- */
+@media (max-width : 480px) {
+
+	.tasks-area, .projects-area {
+		padding: 0px;
+		width: 320px;
+		margin: auto;
+		margin-top: 25px;
+	}
+}

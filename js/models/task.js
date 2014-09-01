@@ -1,13 +1,10 @@
-App.models.Task = Backbone.extend({
+App.models.Task = Backbone.Model.extend({
 
 	defaults : {
-		// id : 
-		executionTime : 0, // timer
+		totalTime : 0, // timer seconds
 		starred : false, // starred will come at top
-		// description : "",
-		// created_at : 
-		// updated_at : 
-		// project_id // will be sent by projects collection
+		description : "Task Description",
+		title : "Task Title",
 		state : "todo"// then - doing -> done
 	},
 
@@ -16,8 +13,23 @@ App.models.Task = Backbone.extend({
 	// },
 
 
-	// initialize : function(${4:args}){
-		
-	// }
+	initialize : function(){
+
+	},
+
+	isStarred : function(){
+		return this.get("starred");
+	},
+
+	startTimer : function(){
+		this.timerId = window.setInterval($.proxy(function(){
+			var totalTime = this.get("totalTime");
+			this.save({totalTime : totalTime + 1 });
+		}, this), 1000);
+	},
+
+	stopTimer : function(){
+		window.clearInterval(this.timerId);
+	}
 
 });
