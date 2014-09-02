@@ -38,8 +38,13 @@ Drag n Drop tasks from one list to another. (Only for desktop considering time c
 Lots of improvements can be done, to name a few - 
 
 Optimisation : Image sprites
+
 Optimisation : Using css preprocessors - sass or less
+
 Optimisation : JS concatenation and minification
+
 Feature : to Star a task so that is stays on top of list
+
 Feature : progress bar on project view - to show project completeness
+
 Feature : Associate team members with tasks
