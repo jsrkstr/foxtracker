@@ -1,7 +1,7 @@
 FoxTracker
 ==========
 
-Demo - [http://jsrockstar132.github.io/foxtracker/](http://jsrockstar132.github.io/foxtracker/)
+Demo - [http://jsrockstar.github.io/foxtracker/](http://jsrockstar.github.io/foxtracker/)
 
 
 Simple project and task tracker
